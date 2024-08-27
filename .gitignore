@@ -20,6 +20,9 @@ target/
 *.ipr
 .env
 
+src/main/resources/application.properties
+
+
 
 
 ### NetBeans ###
