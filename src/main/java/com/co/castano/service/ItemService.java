@@ -22,7 +22,7 @@ public class ItemService {
     boolean started=false;
 
     /**
-     * Descripción: inicializa la lista de groceryItems con elementos predeterminados si no ha sido inicializada antes
+     * Descripción: inicialza la lista de groceryItems con elementos predeterminados si no ha sido inicializada antes
      * local: este arrayList es local y almacena los items a nivel local y no se almacenan directamente en la bd
      * @started: booleana para ver si la lista de groceryItems ya ha sido inicializada antes
      *
