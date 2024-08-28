@@ -38,20 +38,6 @@ public class ItemService {
         }
     }
 
-    /**
-     * Descripción: metodo para inicializar si es que no hay elementos en la bd, pero esto no es local, esto ya es a nivel bd
-     * */
-    @PostConstruct
-    public void init(){
-        List<GroceryItem>item = itemRepository.findAll();
-        if(item.isEmpty()){
-            itemRepository.save(new GroceryItem("Whole", "Whole Wheat Biscuit", 5, "snacks"));
-            itemRepository.save(new GroceryItem("Dried", "Dried Whole Red Chilli", 2, "spices"));
-            itemRepository.save(new GroceryItem("Pearl", "Healthy Pearl Millet", 1, "millets"));
-            itemRepository.save(new GroceryItem("Cheese", "Bonny Cheese Crackers Plain", 6, "snacks"));
-        }
-    }
-
     public String getAll(){
         setGroceryItems();
         List<GroceryItem> item = itemRepository.findAll();
