@@ -14,7 +14,6 @@ target/
 .sts4-cache
 
 #properties
-src/main/resources/application.properties
 
 ### IntelliJ IDEA ###
 .idea
