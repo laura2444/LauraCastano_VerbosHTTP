@@ -1,5 +1,9 @@
 package com.co.castano.model;
 
+
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "groceryItem")
 public class GroceryItem {
 
     private String id;
